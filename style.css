@@ -11,6 +11,8 @@ html, body {
 }
 
 .navbar {
+    background-color: #2074e3;
+    background: -webkit-linear-gradient(top, #2394de 0%, #274c7e 100%);
     background: linear-gradient(#2394de 0%,#274c7e 100%);
     position: fixed;
     top: 0px;
