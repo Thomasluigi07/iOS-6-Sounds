@@ -13,6 +13,7 @@ html, body {
 .navbar {
     background-color: #2074e3;
     background: -webkit-linear-gradient(top, #2394de 0%, #274c7e 100%);
+    background: -ms-linear-gradient(top, #2394de 0%, #274c7e 100%);
     background: linear-gradient(#2394de 0%,#274c7e 100%);
     position: fixed;
     top: 0px;
@@ -669,7 +670,9 @@ div.cy-table>fieldset.half>a {
 
 fieldset>a[href]>div {
     padding-right: 14px;
-    background: linear-gradient(0deg, rgba(22, 22, 22,0.3), rgb(164 164 164 / 30%));
+    background: -webkit-linear-gradient(bottom, #161616 0%, #373636 100%);
+    background: -ms-linear-gradient(bottom, #161616 0%, #373636 100%);
+    background: linear-gradient(0deg, rgba(22, 22, 22,0.3), rgba(164, 164, 164, 0.3));
     border: solid black 1px;
     border-radius: 10px;
 }
