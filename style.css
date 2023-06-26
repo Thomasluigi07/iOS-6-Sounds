@@ -6,11 +6,11 @@
 
 html, body {
     margin: 0px;
-    background-color: black;
 }
 
 html {
     background-image: url(NSTexturedFullScreenBackgroundColor.png);
+    background-color: black;
 }
 
 .navbar {
