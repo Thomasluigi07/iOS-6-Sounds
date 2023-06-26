@@ -7,6 +7,9 @@
 html, body {
     margin: 0px;
     background-color: black;
+}
+
+html {
     background-image: url(NSTexturedFullScreenBackgroundColor.png);
 }
 
@@ -35,6 +38,7 @@ html, body {
 .content {
     margin-top: 50px;
     margin-left: auto;
+    max-width: 500px;
     width: fit-content;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.3);
@@ -834,4 +838,8 @@ fieldset>a>div>div>label.lower,
 fieldset>a>div>div>label.url {
     left: -0.0625em;
     filter: invert(1);
+}
+
+.content h1 a {
+    color: #b9b9b9 !important;
 }
