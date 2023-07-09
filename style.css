@@ -5,7 +5,7 @@
     cursor: url(NormalSelect.cur), default;
 }
 
-a img, a p, a, fieldset>a>div>div>select, fieldset>a[href]>div>div, fieldset>a[href]>div {
+a img, a p, a, fieldset>a>div>div>select, fieldset>a[href]>div>div, fieldset>a[href]>div, fieldset>a>div>div>label:first-child, fieldset>a>div>div>label.lower, fieldset>a>div>div>label.url {
     cursor: url(http://thomasluigi07.com/LinkSelect.cur), pointer;
 }
  
