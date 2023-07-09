@@ -2,7 +2,19 @@
     font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
     color: #b9b9b9;
     text-align: center;
+    cursor: url(NormalSelect.cur), default;
 }
+
+a img, a p, a, fieldset>a>div>div>select, fieldset>a[href]>div>div, fieldset>a[href]>div {
+    cursor: url(http://thomasluigi07.com/LinkSelect.cur), pointer;
+}
+ 
+ input, textarea {
+    cursor: url(http://thomasluigi07.com/TextSelect.cur), text;
+ }
+ 
+ * {
+ }
 
 html, body {
     margin: 0px;
@@ -11,6 +23,13 @@ html, body {
 html {
     background-image: url(NSTexturedFullScreenBackgroundColor.png);
     background-color: black;
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  font-style: normal;
+  font-weight: normal;
+  src: url('LucidaGrande.ttf');
 }
 
 .navbar {
