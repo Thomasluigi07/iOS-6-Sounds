@@ -2,7 +2,7 @@
     font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
     color: #b9b9b9;
     text-align: center;
-    cursor: url(NormalSelect.cur), default;
+    cursor: url(http://thomasluigi07.com/NormalSelect.cur), default;
 }
 
 a img, a p, a, fieldset>a>div>div>select, fieldset>a[href]>div>div, fieldset>a[href]>div, fieldset>a>div>div>label:first-child, fieldset>a>div>div>label.lower, fieldset>a>div>div>label.url {
@@ -54,7 +54,17 @@ html {
     height: 20px;
 }
 
-.content {
+@keyframes tweenIn_content {
+    from {
+        transform: rotateY(90deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.content {  
     margin-top: 50px;
     margin-left: auto;
     max-width: 500px;
@@ -65,6 +75,13 @@ html {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 100px;;
+    animation: tweenIn_content;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.18,
+    0.89,
+    0.32,
+    1.28);
 }
 
 h1, p {
@@ -80,7 +97,7 @@ fieldset>a>div>div>select {
     -webkit-appearance: none
 }
 panel {
-    cursor: pointer;
+    cursor: url(http://thomasluigi07.com/LinkSelect.cur), pointer;
 }
 .titlebar {
     left: 0px;
@@ -855,10 +872,67 @@ fieldset>div>p {
 fieldset>a>div>div>label:first-child,
 fieldset>a>div>div>label.lower,
 fieldset>a>div>div>label.url {
-    left: -0.0625em;
     filter: invert(1);
 }
 
 .content h1 a {
     color: #b9b9b9 !important;
+}
+
+.left {
+    width: 60%;
+}
+    
+.right {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+}
+
+.right img {
+ float: left;
+ width: 80%;
+ margin-left: 10%;
+ margin-bottom: 10%;
+}
+
+fieldset>a>div>div>select, fieldset>a[href]>div>div {
+    text-align: left;
+}
+
+fieldset>a>div>div>label:first-child, fieldset>a>div>div>label.lower, fieldset>a>div>div>label.url {
+    padding-left: 1%;
+}
+
+
+.review {
+    padding: 10px;
+    border: #000 solid 3px;
+    border-radius: 5px;
+    background: rgba(45, 45, 45,0.7);
+    margin-bottom: 15px;
+}
+
+special {
+    font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
+.left, .right {
+    display: table-cell;
+}
+
+.left p, .left h3, .left h4, .left h5 {
+    text-align: left;
+}
+
+.left h4 {
+    margin-bottom: 10px;
+}
+
+.gotoleft {
+    text-align: left;
+}
+
+select {
+    color: #000;
 }
